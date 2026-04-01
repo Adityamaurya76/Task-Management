@@ -1,0 +1,51 @@
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.backup
+.env.production
+.env.local
+
+# IDE and Editor
+.phpactor.json
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+.editorconfig
+
+# Dependencies
+/node_modules
+/vendor
+
+# Laravel
+/auth.json
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/storage/logs/*
+/storage/framework/views/*
+!storage/framework/views/.gitkeep
+!storage/logs/.gitkeep
+/bootstrap/cache/*
+!bootstrap/cache/.gitkeep
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# Testing
+.phpunit.result.cache
+/tests/cache
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
