@@ -193,41 +193,7 @@ All error responses follow a consistent format:
 }
 ```
 
-## Contributing
-
-Feel free to submit issues and pull requests. Please follow the existing code style and add tests for new features.
-
-## License
-
-This project is open-sourced software licensed under the MIT license.
-  - `due_date`: Required, valid date, cannot be in the past
-
-#### Get Single Task
-- **Endpoint**: `GET /auth/tasks/{id}`
-- **Response**: Single task object
-
-#### Update Task
-- **Endpoint**: `PUT /auth/tasks/{id}`
-- **Body**:
-  ```json
-  {
-    "title": "Updated title",
-    "description": "Updated description",
-    "status": "completed",
-    "due_date": "2026-04-20"
-  }
-  ```
-
-#### Mark Task as Completed
-- **Endpoint**: `PATCH /auth/tasks/{id}/mark-completed`
-- **Response**: Task object with status updated to 'completed'
-
-#### Delete Task
-- **Endpoint**: `DELETE /auth/tasks/{id}`
-- **Response**: Success message
-
 ## Response Format
-
 ### Success Response
 ```json
 {
@@ -284,8 +250,4 @@ tests/
 └── Unit/                          # Unit tests
 ```
 
-Or with PHPUnit:
-```bash
-php vendor/bin/phpunit
-```
 
