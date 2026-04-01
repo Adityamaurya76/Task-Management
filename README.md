@@ -284,27 +284,6 @@ tests/
 └── Unit/                          # Unit tests
 ```
 
-## Database Schema
-
-### Tasks Table
-```
-- id
-- user_id (foreign key)
-- title (string)
-- description (text, nullable)
-- status (enum: pending, completed)
-- due_date (datetime, nullable)
-- created_at
-- updated_at
-```
-
-## Testing
-
-Run tests with:
-```bash
-php artisan test
-```
-
 Or with PHPUnit:
 ```bash
 php vendor/bin/phpunit
